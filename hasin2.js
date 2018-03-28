@@ -105,7 +105,8 @@ square.setHeight(20)
 //console.log("The new height of the square is", square.height);
 
 
-//Let's look at another method that calculates useful information about an object
+//Let's look at another method that calculates useful 
+//information about an object
 
 var square = new Object();
 square.sideLength = 6;
@@ -124,5 +125,25 @@ var a = square.calcArea();
 
 
 
-console.log(p);
-console.log(a);
+//console.log(p);
+//console.log(a);
+
+
+//custom construction of an  object
+function Person(name,age){
+		this.name= name;
+		this.age=age;
+}
+
+
+var nuba = new Person("nuba ali",22);
+
+var ruba = new Person("nuba ",62);
+
+console.log(nuba,ruba);
+
+
+
+
+
+
