@@ -102,14 +102,27 @@ square.setHeight(20)
 
 //console.log(dds);
 
-console.log("The new height of the square is", square.height);
+//console.log("The new height of the square is", square.height);
+
+
+//Let's look at another method that calculates useful information about an object
+
+var square = new Object();
+square.sideLength = 6;
+square.calcPerimeter = function() {
+  return this.sideLength * 4;
+};
+//  define an area method here
+
+square.calcArea = function(){
+	return this.sideLength * 2;
+}
+
+
+var p = square.calcPerimeter();
+var a = square.calcArea();
 
 
 
-
-
-
-
-
-
-
+console.log(p);
+console.log(a);
