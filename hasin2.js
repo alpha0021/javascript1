@@ -41,14 +41,31 @@ bob.setAge=function(newAge){
 	bob.age = newAge;
 }
 bob.setAge(33);
-console.log(bob.age);
+//console.log(bob.age);
 
 
 bob.getYearOfBirth=function(){
 	return 2018 - bob.age;
 }
 
- 
-console.log(bob.getYearOfBirth());
+ //console.log(bob.getYearOfBirth());
+
+
+// using the this method
+
+
+
+var bob = new Object();
+bob.age = 30;
+
+bob.setAge = function(newAge){
+   this.age = newAge;
+}
+
+
+
+bob.setAge(40);
+
+console.log(bob.age);
 
 
