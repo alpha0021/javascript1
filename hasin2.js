@@ -26,10 +26,29 @@ car.setPrice=function(newPrice){
 
 car.setPrice("10000 euro"); // calling the  function with the changed price
 
-console.log(car.price); //now  log to see if the  price is changed  or not 
+//console.log(car.price); //now  log to see if the  price is changed  or not 
 
+
+//more method practise
+
+var bob = new Object();
+bob.age = 12;
+
+
+//method 1
+
+bob.setAge=function(newAge){
+	bob.age = newAge;
+}
+bob.setAge(33);
+console.log(bob.age);
+
+
+bob.getYearOfBirth=function(){
+	return 2018 - bob.age;
+}
 
  
-
+console.log(bob.getYearOfBirth());
 
 
