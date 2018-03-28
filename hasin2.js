@@ -57,15 +57,30 @@ bob.getYearOfBirth=function(){
 
 var bob = new Object();
 bob.age = 30;
-
 bob.setAge = function(newAge){
    this.age = newAge;
 }
-
-
-
 bob.setAge(40);
 
-console.log(bob.age);
+//console.log(bob.age);
+
+
+//setAge method for more people(object)
+
+var setAge = function(newAge){
+   this.age = newAge;
+}
+var bob = new Object();
+bob.age = 30;
+bob.setAge = setAge;
+bob.setAge(44);
+//console.log(bob.age);
+
+var susan = new Object();
+susan.age=22;
+susan.setAge=setAge;
+susan.setAge(11);
+console.log(susan.age);
+
 
 
