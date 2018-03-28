@@ -80,7 +80,36 @@ var susan = new Object();
 susan.age=22;
 susan.setAge=setAge;
 susan.setAge(11);
-console.log(susan.age);
+//console.log(susan.age);
+
+
+
+//creating own method 
+
+
+var square = new Object();
+square.height = 23;
+
+
+square.setHeight = function(newHeight){
+	this.setHeight = newHeight;
+}
+
+//now store the value  of the new square
+
+square.setHeight(20)
+;
+
+//console.log(dds);
+
+console.log("The new height of the square is", square.height);
+
+
+
+
+
+
+
 
 
 
