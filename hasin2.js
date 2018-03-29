@@ -140,9 +140,25 @@ var nuba = new Person("nuba ali",22);
 
 var ruba = new Person("nuba ",62);
 
-console.log(nuba,ruba);
+//console.log(nuba,ruba);
 
 
+//constructor with this
+
+function Person(name,age){
+	this.name = name;
+	this.age=age;
+	this.sepiens = "Homo Sepiens";
+}
+
+
+var person1 = new Person("Rushdi hasan" ,29);
+var person2 = new Person("Subit Das",33);
+
+
+console.log("this is " + person1.name + " " + "and"+ " " + person1.name + "  "  + "is" 
+	+person1.age+ "years old");
+console.log("The  sepiens of this man is " + person1.sepiens);
 
 
 
